@@ -1,12 +1,14 @@
  class SimpleTokenizerV1:
     def __init__(self , vocab):
         self.str_to_int = vocab
-        self.int_to_str = {i:s for s,i in vocab.items()}
+        self.int_to_str = {i:s for s,i in vocab.items()} #fore reverse mapping 
+     # This encode function will convert Tokens into IDs
     def encode(self , text):
         preprocessed = re.split(r'([,.:;?!\']|--|\s)' ,text )
         preprocessed = [item for item in preprocessed if item.strip()]
         ids = [self.str_to_int[s] for s in preprocessed]
         return ids
+     #To get tokens from IDs Decode Function is used
     def decode(self,ids):
         text = " ".join([self.int_to_str[i] for i in ids])
         # The effect is that any whitespace directly before the specified punctuation marks is removed.
