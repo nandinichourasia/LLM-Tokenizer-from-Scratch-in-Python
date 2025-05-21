@@ -11,7 +11,7 @@ A simple Python implementation of a Large Language Model (LLM) tokenizer built f
 
 # 🚀 Features
 Custom vocabulary building.<br>
-Basic tokenization (character/word/byte pair encoding — depending on what you implemented).<br
+Basic tokenization.<br>
 Encoding text to tokens.<br>
 Decoding tokens back to text.<br>
 Minimal and educational Python code.
