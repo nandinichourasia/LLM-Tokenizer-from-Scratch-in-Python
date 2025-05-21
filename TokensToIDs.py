@@ -7,7 +7,7 @@ import re
 preprocessed = re.split(r'([,.:;?_!"()\']|--|\s)' , raw_text)
 preprocessed = [item for item in preprocessed if item.strip()]
 
-# preprocessed is the list of tokens now,
+# preprocessed is the list of tokens now, the tokens list is converted into a set and then sorted in alphabetical order
 
 all_words = sorted(set(preprocessed))
 print(len(all_words))
