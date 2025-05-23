@@ -17,4 +17,4 @@ Decoding tokens back to text.<br>
 Minimal and educational Python code.
 
 # 📖 How it Works
-This tokenizer uses a simple approach by first building a vocabulary from the input data. It then tokenizes input text based on this vocabulary and provides both encode and decode functionalities. It's a simplified version, inspired by how tokenizers like BPE or WordPiece work.
+This Word Based tokenizer uses a simple approach by first building a vocabulary from the input data. It then tokenizes input text based on this vocabulary and provides both encode and decode functionalities. It's a simplified version, inspired by how tokenizers like BPE or WordPiece work.
